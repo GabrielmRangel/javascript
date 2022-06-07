@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de gringo</title>
+</head>
+<body>
+    <h1>Sistema gringo</h1>
+    Nacionalidade: <input type="text" name="txtnasc" id="txtnasc"> <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            var tnasc = document.getElementById('txtnasc')
+            var nasc = tnasc.value.toLowerCase()
+            var res = document.getElementById('res')
+            if (nasc == "brasileiro") {
+                res.innerHTML += `<p>Você é <strong>${nasc[0].toUpperCase() + nasc.slice(1).toLowerCase()}!</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>gringo!</strong></p>`
+            }    
+        }
+    </script>
+</body>
+</html>
