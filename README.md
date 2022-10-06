@@ -1,2 +1,2 @@
-# javascript
- Curso de Javascript
+# Javascript
+ Curso de Javascript do canal Curso em Vídeo e professor Gustavo Guanabara.
